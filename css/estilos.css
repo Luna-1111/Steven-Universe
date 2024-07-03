@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+   nav a{
+    width: 33.33333%;
+    font-size: 1.1rem;
+    color: rgb(240, 78, 154);
+    font-weight: 600;
+    letter-spacing: 1pt;
+    border: 0,5px solid #aaa;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100px;
+}
+
+nav a:hover{
+    color:  bisque;
+}
+
+.seccion_uno {
+    position: relative;
+    height: 100vh;
+    background-image: url(../imagenes/thumb-1920-736068.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+  }
+  
+  .seccion_uno img {
+    position: absolute;
+    width: 250px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .seccion_uno img {
+    animation-duration: 5s; 
+    animation-timing-function: linear; 
+  }
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; 
+    animation-name: zoomInOut;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes zoomInOut {
+    0%, 100% { transform: translate(-50%, -50%) scale(3); }
+    50% { transform: translate(-50%, -50%) scale(5); }
+  }
+  
+  .arriba {
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: moveUpDown;
+  }
+  
+  .derecha {
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-name: moveRightLeft;
+  }
+  
+  .izquierda {
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-name: moveLeftRight;
+  }
+  
+  @keyframes moveUpDown {
+    0%, 100% { top: 20px; }
+    50% { top: calc(20vh - 20px); }
+  }
+  
+  @keyframes moveRightLeft {
+    0%, 100% { right: 50px; }
+    50% { right: calc(20% - 20px); }
+  }
+  
+  @keyframes moveLeftRight {
+    0%, 100% { left: 50px; }
+    50% { left: calc(20% - 20px); }
+  }
+
+  .seccion_dos{
+    position: relative;
+    height: 300vh;
+    background-image: url(../imagenes/thumb-1920-736068.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .seccion_dos div{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition:height 3s, width 3s; 
+  }
+
+  .seccion_dos img{
+    position: absolute;
+    width: 180px;
+
+  }
+
+  .Divi1{
+    background-color: rgb(207, 94, 126);
+    top: 70px;
+    left: 30px;
+  }
+  
+
+  .Divi1 p{
+    opacity: 0%;
+    left: 100px;
+    transition: opacity 2s ease;
+    opacity: 0
+  }
+
+  #f1{
+    width: 800px;
+    left: 150px;
+  }
+
+  .Garnet{
+    left: -40px;
+  }
+  
+  .Divi1:hover{
+    height: 350px;
+    width: 1000px;
+
+  }
+  .Divi1:hover p{
+    animation-name: opacity;
+    animation-delay: 4s;
+    opacity: 1
+  }
+
+  .Divi2{
+    background-color: rgb(195, 143, 223);
+    top: 450px;
+    left: 30px;
+  }
+  
+
+  .Divi2 p{
+    opacity: 0%;
+    left: 100px;
+    transition: opacity 2s ease;
+    opacity: 0
+  }
+
+  #f2{
+    width: 800px;
+    left: 150px;
+  }
+
+  .Amatista{
+    left: -40px;
+  }
+  
+  .Divi2:hover{
+    height: 350px;
+    width: 1000px;
+
+  }
+  .Divi2:hover p{
+    animation-name: opacity;
+    animation-delay: 4s;
+    opacity: 1
+  }
+
+  .Divi3{
+    background-color: rgb(143, 212, 223);
+    top: 830px;
+    left: 30px;
+  }
+  
+
+  .Divi3 p{
+    opacity: 0%;
+    left: 100px;
+    transition: opacity 2s ease;
+    opacity: 0
+  }
+
+  #f3{
+    width: 800px;
+    left: 150px;
+  }
+
+  .Perla{
+    left: -40px;
+  }
+  
+  .Divi3:hover{
+    height: 350px;
+    width: 1000px;
+
+  }
+  .Divi3:hover p{
+    animation-name: opacity;
+    animation-delay: 4s;
+    opacity: 1
+  }
+  @keyframes opacity{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+  }
